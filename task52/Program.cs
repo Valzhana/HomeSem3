@@ -18,7 +18,7 @@ int[,] CreateArray()
     return array;
 }
 int[,] arr = CreateArray();
-void FindAverageInRow(int[,] arr)
+void FindAverageInColumn(int[,] arr)
 {
     for (int j = 0; j < arr.GetLength(1); j++)
     {   
@@ -32,4 +32,4 @@ void FindAverageInRow(int[,] arr)
         Console.WriteLine($"The average of {j} column: {average}");
     }
 }
-FindAverageInRow(arr);
+FindAverageInColumn(arr);
